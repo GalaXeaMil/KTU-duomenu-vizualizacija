@@ -1,34 +1,21 @@
-library(rmarkdown)
-library(tidyverse)
-library(png)
-library(grid)
-
- 
- 
 # R Laboratorinis darbas: duomenų vizualizacija
 
-#| Variantas | ecoActCode |
-#|------------- | ------------- |
-#|20   | 11111111111 |
+| Variantas | ecoActCode |
+| ------------- | ------------- |
+| 6    | 461000 |
 
-knitr::opts_chunk$set(echo = TRUE)
 
 ### 1. Užduotis
 
+Atsakymas:
 
-#Atsakymas:
-
-img <- readPNG("img/rplot1.png")
- grid.raster(img)
- 
-
-#Išvados:
+![histograma](img/rplot1.png)
 
 ### 2. Užduotis
 
-#Atsakymas:
-img2 <- readPNG("img/rplot2.png")
- grid.raster(img2)
+Atsakymas:
+
+![atlyginimai](img/rplot2.png)
 
 
 #Išvados:
@@ -36,17 +23,20 @@ img2 <- readPNG("img/rplot2.png")
 
 ### 3. Užduotis
 
-#Atsakymas:
+Atsakymas:
 
-img3 <- readPNG("img/rplot3.png")
- grid.raster(img3)
+![apdraustieji](img/rplot3.png)
+
+
 
 #Išvados:
 
 
 ### 4. Užduotis
 
-#Shiny R aplikacijos nuotrauka:
+Shiny R aplikacijos nuotrauka:
 
-img4 <- readPNG("img/Pavyzdys.png")
- grid.raster(img4)
+![shiny app](img/Pavyzdys.png)
+
+
+

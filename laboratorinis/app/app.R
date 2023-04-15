@@ -29,7 +29,7 @@ ui <-dashboardPage(
   
   dashboardHeader(title="Laboratorinis Nr.2 Grupe 461000", titleWidth = 500),
   dashboardSidebar(
-      selectizeInput(inputId = "imones_kodas", label = "Imones vardas", choices = NULL, selected = NULL)
+      selectizeInput(inputId = "imones_kodas", label = "Imones pavadinimas", choices = NULL, selected = NULL)
     ),
     dashboardBody( use_theme(mytheme),
                    fluidRow(box("",valueBoxOutput("Kodas", width = 250), width = 500)),
