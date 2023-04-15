@@ -53,10 +53,10 @@ server <- function(input, output, session) {
       filter(name == input$imones_kodas) , digits = 0
   )
   
-  output$Kodas <-renderValueBox({ t <- data12 %>% filter(name==input$imones_kodas) %>% head(1)
+  output$Kodas <-renderValueBox({ 
+    t <- data12 %>% filter(name==input$imones_kodas) %>% head(1)
                                   valueBox(t$code, "", color = "purple")
-  }
-    )
+  })
     
   output$plot <- renderPlot(
     data12 %>%
@@ -73,11 +73,8 @@ server <- function(input, output, session) {
         filter(name == input$imones_kodas) %>%
       ggplot(aes(month1,numInsured, fill="numInsured"))+geom_col(fill = ("#7B68EE"))+
       scale_y_continuous(labels = scales::number_format())+theme_light()+
-      scale_x_datetime(date_labels="%b %y",date_breaks  ="1 month")
-        #ggplot(aes(x = month1, y = numInsured)) +
-        #geom_line(size = 0.9, linetype = 4, alpha=0.4, colour="#483D8B" )+geom_point(color="#7B68EE")+theme_bw()+
-        #labs( y="Insured people", x="Month")+
-      #scale_x_datetime(date_labels="%b %y",date_breaks  ="1 month")
+      scale_x_datetime(date_labels="%b %y",date_breaks  ="1 month")+labs( y="Average salary", x="Month")
+        
     
     
   )

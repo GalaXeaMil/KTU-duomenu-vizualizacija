@@ -1,38 +1,41 @@
+library(rmarkdown)
+library(tidyverse)
+library("knitr")
 # R Laboratorinis darbas: duomenų vizualizacija
 
-| Variantas | ecoActCode |
-|------------- | ------------- |
-|20   | 11111111111 |
+#| Variantas | ecoActCode |
+#|------------- | ------------- |
+#|20   | 11111111111 |
 
+knitr::opts_chunk$set(echo = TRUE)
 
 ### 1. Užduotis
 
-Atsakymas:
 
-![histograma](img/pavyzdys1.png)
+#Atsakymas:
 
-Išvados:
+knitr::include_graphics("./img/rplot1.png")
+
+#Išvados:
 
 ### 2. Užduotis
 
-Atsakymas:
+#Atsakymas:
 
-![atlyginimai](img/pavyzdys2.png)
+knitr::include_graphics("./img/rplot2.png")
 
-Išvados:
+#Išvados:
 
 
 ### 3. Užduotis
 
-Atsakymas:
+#Atsakymas:
 
-![apdraustieji](img/pavyzdys3.png)
+knitr::include_graphics("./img/rplot3.png")
 
-Išvados:
+#Išvados:
 
 
 ### 4. Užduotis
 
-Shiny R aplikacijos nuotrauka:
-
-![shiny app](img/shiny_example.png)
+#Shiny R aplikacijos nuotrauka:
