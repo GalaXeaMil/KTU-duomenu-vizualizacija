@@ -1,6 +1,10 @@
 library(rmarkdown)
 library(tidyverse)
-library("knitr")
+library(png)
+library(grid)
+
+ 
+ 
 # R Laboratorinis darbas: duomenų vizualizacija
 
 #| Variantas | ecoActCode |
@@ -14,15 +18,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #Atsakymas:
 
-knitr::include_graphics("./img/rplot1.png")
+img <- readPNG("img/rplot1.png")
+ grid.raster(img)
+ 
 
 #Išvados:
 
 ### 2. Užduotis
 
 #Atsakymas:
+img2 <- readPNG("img/rplot2.png")
+ grid.raster(img2)
 
-knitr::include_graphics("./img/rplot2.png")
 
 #Išvados:
 
@@ -31,7 +38,8 @@ knitr::include_graphics("./img/rplot2.png")
 
 #Atsakymas:
 
-knitr::include_graphics("./img/rplot3.png")
+img3 <- readPNG("img/rplot3.png")
+ grid.raster(img3)
 
 #Išvados:
 
@@ -39,3 +47,6 @@ knitr::include_graphics("./img/rplot3.png")
 ### 4. Užduotis
 
 #Shiny R aplikacijos nuotrauka:
+
+img4 <- readPNG("img/Pavyzdys.png")
+ grid.raster(img4)

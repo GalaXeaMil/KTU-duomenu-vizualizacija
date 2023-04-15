@@ -352,32 +352,35 @@ display: none;
 </div>
 
 
-<p>library(rmarkdown) library(tidyverse) library(“knitr”) # R
-Laboratorinis darbas: duomenų vizualizacija</p>
+<p>library(rmarkdown) library(tidyverse) library(png) library(grid)</p>
+<div id="r-laboratorinis-darbas-duomenų-vizualizacija" class="section level1">
+<h1>R Laboratorinis darbas: duomenų vizualizacija</h1>
 <p>#| Variantas | ecoActCode | #|————- | ————- | #|20 | 11111111111
 |</p>
 <p>knitr::opts_chunk$set(echo = TRUE)</p>
 <div id="užduotis" class="section level3">
 <h3>1. Užduotis</h3>
 <p>#Atsakymas:</p>
-<p>knitr::include_graphics(“./img/rplot1.png”)</p>
+<p>img &lt;- readPNG(“img/rplot1.png”) grid.raster(img)</p>
 <p>#Išvados:</p>
 </div>
 <div id="užduotis-1" class="section level3">
 <h3>2. Užduotis</h3>
-<p>#Atsakymas:</p>
-<p>knitr::include_graphics(“./img/rplot2.png”)</p>
+<p>#Atsakymas: img2 &lt;- readPNG(“img/rplot2.png”)
+grid.raster(img2)</p>
 <p>#Išvados:</p>
 </div>
 <div id="užduotis-2" class="section level3">
 <h3>3. Užduotis</h3>
 <p>#Atsakymas:</p>
-<p>knitr::include_graphics(“./img/rplot3.png”)</p>
+<p>img3 &lt;- readPNG(“img/rplot3.png”) grid.raster(img3)</p>
 <p>#Išvados:</p>
 </div>
 <div id="užduotis-3" class="section level3">
 <h3>4. Užduotis</h3>
 <p>#Shiny R aplikacijos nuotrauka:</p>
+<p>img4 &lt;- readPNG(“img/Pavyzdys.png”) grid.raster(img4)</p>
+</div>
 </div>
 
 
