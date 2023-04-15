@@ -33,8 +33,8 @@ ui <-dashboardPage(
     ),
     dashboardBody( use_theme(mytheme),
                    fluidRow(box("",valueBoxOutput("Kodas", width = 250), width = 500)),
-      fluidRow(box("Average salary dynamics", plotOutput("plot"), width = 500)),
-      fluidRow(box("grafikas", plotOutput("plotly"), width = 500))
+      fluidRow(box("Vidutinis atlyginimas", plotOutput("plot"), width = 500)),
+      fluidRow(box("Apdraustų darbuotojų skaičius", plotOutput("plotly"), width = 500))
       )
 )
 
